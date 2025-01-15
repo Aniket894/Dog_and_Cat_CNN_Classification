@@ -1,4 +1,4 @@
-# Advanced-Level Documentation for Dog and Cat Image Classification using CNN
+# Dog and Cat Image Classification using CNN
 ## Project Overview
 The Dog and Cat Image Classification project utilizes a Convolutional Neural Network (CNN) to effectively classify images into two categories: dogs and cats. This project exemplifies the use of deep learning techniques in computer vision, implementing modern neural network architectures for robust image classification.
 
