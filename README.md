@@ -17,7 +17,7 @@ Validation Images: Used for model performance validation.
 Testing Images: A separate set of unlabeled images used for final evaluation.
 
 ## Preprocessing Steps
-Resizing: All images are resized to 128x128 for consistency.
+Resizing: All images are resized to 256x256 for consistency.
 Normalization: Pixel values are normalized to a range of [0, 1] to ensure faster convergence.
 Augmentation: Techniques such as rotation, flipping, zooming, and cropping are applied to enhance model generalization.
 
@@ -27,7 +27,7 @@ Images are loaded using Python libraries like TensorFlow and Keras.
 Data Augmentation: The ImageDataGenerator is used to apply data augmentation and reduce overfitting.
 
 ## Model Architecture
-Input Layer: Accepts images of size 128x128x3.
+Input Layer: Accepts images of size 256x256x3.
 Convolutional Layers: Extract features using kernels with ReLU activation functions.
 Pooling Layers: Max pooling layers reduce dimensionality.
 Dropout Layers: Prevent overfitting by randomly disabling neurons during training.
@@ -37,7 +37,7 @@ Compilation and Training
 Loss Function: Binary Cross-Entropy is used for classification.
 Optimizer: Adam optimizer with an initial learning rate of 0.001.
 Metrics: Accuracy is used as the primary evaluation metric.
-Batch Size: 32, with a total of 50 epochs for training.
+Batch Size: 32, with a total of 10 epochs for training.
 Evaluation and Testing
 The model is evaluated on the validation set to fine-tune hyperparameters.
 The testing set is used for the final performance evaluation.
